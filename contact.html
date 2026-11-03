@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/svg" href="assets/images/IconsPresentation/LogoMonochrome.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="assets/js/theme-init.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<canvas id="bgShaderCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;background-color:var(--bg-color);"></canvas>
+<script src="assets/js/dark-light-mode.js"></script>
+<script src="bgShader.js"></script>
+    <header>
+        <!--#include virtual="/partials/header.html" -->
+    </header>
+
+    <main>
+        <div class="mainContainer">
+
+            <h1 class="pageTitle">Contact</h1>
+
+            <div class="formContainer">
+
+                <h2>Formulaire</h2>
+
+                <form id="form" class="form">
+
+                    <label class="formLabel" for="email">Email :</label>
+                    <div class="field">
+                        <input type="email" id="email" name="email" placeholder="Saisissez votre email" required>
+                    </div>
+
+                    <label class="formLabel" for="objet">Objet :</label>
+                    <div class="field">
+                        <textarea id="objet" name="objet" rows="2" placeholder="Saisissez l’objet" required></textarea>
+                    </div>
+
+                    <label class="formLabel" for="message">Message :</label>
+                    <div class="field">
+                        <textarea id="message" name="message" rows="10"  placeholder="Saisissez votre message" required></textarea>
+                    </div>
+
+                    <div class="submitContainer">
+                        <button class="submitButton" type="submit">Envoyer</button>
+
+                        <p id="confirmation" class="confirmation">
+                            Message envoyé avec succès ✔
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+
+
+            <button onclick="window.location.href='presentation'" class="nextPageButton">Accueil ></button>
+        </div>
+    </main>
+
+    <footer>
+        <!--#include virtual="/partials/footer.html" -->
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/form.js"></script>
+
+</body>
+</html>
+
