@@ -1,0 +1,32 @@
+Politique de confidentialité
+
+Responsable du traitement
+Matt DELAPORTE--LEFEBVRE, joignable à matt.dgd@proton.me
+
+Données collectées
+Uniquement lorsque vous cliquez sur « Envoyer » dans le formulaire de contact :
+
+votre adresse email ;
+l’objet de votre message ;
+le contenu de votre message ;
+votre adresse IP et votre user agent (informations sur votre navigateur).
+
+Aucune autre donnée n’est collectée. Ce site n’utilise aucun cookie, aucun outil de mesure d’audience et aucun contenu tiers.
+
+Finalités et bases légales
+
+Répondre à votre message : intérêt légitime de l’éditeur à répondre aux sollicitations qui lui sont adressées.
+Adresse IP et user agent : sécurité du site et lutte contre les abus (spam, envois automatisés), sur la base de l’intérêt légitime de l’éditeur.
+
+Durée de conservation
+
+Email, objet et message : 6 mois maximum après le dernier échange, puis suppression.
+Adresse IP et user agent : 3 mois maximum, puis suppression.
+
+Destinataires
+Les données sont accessibles uniquement à l’éditeur. Elles ne sont ni vendues ni transmises à des tiers, à l’exception du prestataire technique Cloudflare, Inc., par lequel transite l’ensemble du trafic du site (y compris l’envoi du formulaire). Cloudflare agit en tant que sous-traitant et traite notamment l’adresse IP et les données techniques de connexion des visiteurs afin d’assurer la sécurité et la performance du site. Ces traitements peuvent impliquer un transfert de données vers les États-Unis, encadré par le Data Privacy Framework UE-États-Unis auquel Cloudflare est certifié et par des clauses contractuelles types. Plus d’informations : https://www.cloudflare.com/privacypolicy/
+
+Vos droits
+Vous disposez d’un droit d’accès, de rectification, d’effacement, d’opposition et de limitation du traitement de vos données. Pour les exercer, écrivez à matt.dgd@proton.me . Vous pouvez aussi introduire une réclamation auprès de la CNIL (www.cnil.fr).
+
+Dernière mise à jour : 05/11/2026

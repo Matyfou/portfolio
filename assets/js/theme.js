@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!button) return;
 
     const updateButton = () => {
-        button.textContent = root.classList.contains("light")
-            ? "☀️ clair"
-            : "sombre 🌙";
+        const isLight = root.classList.contains("light");
+        button.innerHTML = isLight
+        ? '<span class="theme-emoji">☀️</span><span class="theme-label">clair</span>'
+        : '<span class="theme-label">sombre</span><span class="theme-emoji">🌙</span>';
+        button.setAttribute("aria-label", isLight ? "Thème clair" : "Thème sombre");
     };
 
     updateButton();

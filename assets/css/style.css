@@ -63,11 +63,13 @@ p{
 
 /* --- Header --- */
 
-.theme-btn
-{
+.theme-btn {
     color: var(--text-color);
     font-size: 16px;
     display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.3em 0.8em;
     border: 2px solid var(--primary-color);
     border-radius: 999px;
     overflow: hidden;
@@ -77,6 +79,12 @@ p{
     top: 20px;
     right: 20px;
     z-index: 1000;
+}
+
+@media (max-width: 800px) {
+    .theme-label {
+        display: none;
+    }
 }
 
 
@@ -596,6 +604,16 @@ footer{
     margin-right: 25px;
 }
 
+.footerLinkAlignLeft{
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.footerLinkAlignRight{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
 .back-to-top{
     text-decoration: none;
     margin-left: auto;
@@ -603,11 +621,27 @@ footer{
 
 @media (max-width: 800px) {
     .back-to-top {
-        visibility: hidden;
-        pointer-events: none;
+        display: none;
     }
-    footer{
+
+    footer {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .footerLinksContainer {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    /* Les liens légaux passent sur une nouvelle ligne */
+    .footerLinkAlignRight {
+        flex-basis: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .footerLinkAlignLeft {
+        flex-basis: 100%;
+        margin: 0;
     }
 }

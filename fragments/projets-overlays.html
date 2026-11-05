@@ -118,9 +118,9 @@
 <div class="overlay" id="ledsOverlay">
     <div class="overlayContent">
         <video class="projectThumbnail nearestFilter" width="800" height="800" loop muted playsinline preload="none"
-               data-src="assets/images/LEDs/LEDsAnimated0-800.webm"
-               data-src-mp4="assets/images/LEDs/LEDsAnimated0-800.mp4"
-               data-poster="assets/images/LEDs/LEDsAnimated0-poster.webp"
+               data-src="assets/images/LEDs/LEDsAnimated0-800.webm?v=20261105-3"
+               data-src-mp4="assets/images/LEDs/LEDsAnimated0-800.mp4?v=20261105-3"
+               data-poster="assets/images/LEDs/LEDsAnimated0-poster.webp?v=20261105-3"
                aria-label="Démonstration des LEDs et de l'interface"></video>
         <h2>Leds</h2>
         <h3>Ce programme en C++ pour ESP32 est un contrôleur de bandeaux de LEDs WS2812B
@@ -264,40 +264,65 @@
 
 <div class="overlay" id="serveurOverlay">
     <div class="overlayContent">
-        <h3>Serveur personnel sous Debian</h3>
-        <img loading="lazy" decoding="async" class="projectThumbnail" src="assets/images/Serveur/Serveur0.webp" width="1000" height="750" alt="Serveur personnel sous Debian">
+        <h3>Infrastructure personnelle auto-hébergée</h3>
+        <img loading="lazy" decoding="async" class="projectThumbnail" src="assets/images/Serveur/Serveur0.webp" width="1000" height="750" alt="Serveur personnel sous Debian"/>
 
-        <h2>Ce projet consiste à mettre en place un serveur sous Debian permettant d’héberger
-        plusieurs services réseau et applicatifs afin de centraliser le stockage, le multimédia,
-        l’automatisation et les outils de développement.</h2>
+        <h2>Ce projet consiste à concevoir et maintenir une infrastructure personnelle répartie sur
+        plusieurs machines (physiques et virtuelles), hébergeant mes sites, mes services réseau et applicatifs,
+        le stockage, le multimédia, l’automatisation et mes outils de développement.</h2>
 
+        <h3>VM Alpine Linux :</h3>
+        <ul>
+            <li><b>Nginx </b>: reverse proxy pour l’ensemble de mes machines.</li>
+            <li><b>Sites web </b>: hébergement de mon portfolio et de mes autres sites.</li>
+            <li><b>API </b>: API associée à mes sites.</li>
+            <li><b>Bot Discord </b>: bot hébergé en continu sur la VM.</li>
+            <li><b>Cloudflare </b>: proxy devant tous les sites publics.</li>
+        </ul>
 
-        <h3>Services installés :</h3>
+        <h3>Machine dédiée Artix Linux :</h3>
+        <ul>
+            <li><b>Serveurs de jeu </b>: hébergés dans des conteneurs Docker.</li>
+            <li><b>Jellyfin </b>: serveur multimédia pour le streaming de films, séries et musique.</li>
+            <li><b>NAS (SMB / FTP) </b>: stockage et partage de fichiers sur le réseau.</li>
+            <li><b>JDownloader </b>: gestionnaire de téléchargements.</li>
+        </ul>
+
+        <h3>VM Debian :</h3>
         <ul>
             <li><b>SSH </b>: accès distant sécurisé au serveur pour l’administration en ligne de commande.</li>
             <li><b>FTP / SFTP </b>: transfert de fichiers entre le serveur et des machines clientes.</li>
-            <li><b>VPN </b>: WireGuard et OpenVPN avec utilisateurs, pour accéder à mon réseau local depuis l’extérieur ou de mon téléphone.</li>
-            <li><b>Samba </b>: partage de fichiers en réseau local compatible Windows et Linux, adapté au streaming vidéo.</li>
+            <li><b>VPN </b>: WireGuard, pour accéder à mon réseau local depuis l’extérieur ou de mon téléphone.</li>
+            <li><b>Samba </b>: partage de fichiers en réseau local compatible Windows et Linux.</li>
             <li><b>Jellyfin </b>: serveur multimédia pour le streaming de films, séries et musique.</li>
             <li><b>Git </b>: hébergement de dépôts de code pour le versioning et la collaboration, afin de ne plus être dépendant des limites de GitHub.</li>
-            <li><b>Pyload </b>: gestionnaire de téléchargements automatisés.</li>
             <li><b>FreshRSS </b>: agrégateur de flux RSS auto-hébergé pour centraliser les actualités et ma veille informatique.</li>
             <li><b>TeamSpeak </b>: serveur vocal pour la communication en temps réel, chiffré et gratuit.</li>
             <li><b>Syncthing </b>: synchronisation automatique de projets et sauvegardes.</li>
             <li><b>Bots Python </b>: scripts automatisés pour diverses tâches et intégrations de développement.</li>
-            <li><b>Ollama (IA locale) </b>: exécution de modèles d’intelligence artificielle en local sans cloud.</li>
         </ul>
 
-        <h4>Un serveur personnel complet, pensé pour l’autonomie et le contrôle total de mon infrastructure, je réduis progressivement ma dépendance aux services cloud externes,
-        tout en gardant un contrôle total sur mes données personnelles, leur stockage et leur sécurité.
+        <img loading="lazy" decoding="async" class="projectThumbnail" src="assets/images/Serveur/Serveur1.webp" width="1000" height="550" alt="Services hébergés sur le serveur personnel"/>
+
+        <h3>Sécurité :</h3>
+        <ul>
+            <li><b>Isolation des services </b>: chaque type de service tourne sur une machine distincte, ce qui limite l’impact d’une éventuelle compromission.</li>
+            <li><b>Reverse proxy obligatoire </b>: les rares ports ouverts passent systématiquement par Nginx, qui filtre les bots et les attaques DDoS.</li>
+            <li><b>Cloudflare </b>: tous mes sites publics (dont le portfolio) sont derrière le proxy Cloudflare.</li>
+            <li><b>Accès par VPN </b>: aucun service interne n’est accessible depuis l’extérieur sans passer par le VPN.</li>
+        </ul>
+
+        <h4>Une infrastructure complète, pensée pour l’autonomie et le contrôle total. Je réduis progressivement ma dépendance aux services cloud externes,
+        tout en gardant la maîtrise de mes données personnelles, de leur stockage et de leur sécurité.
         </h4>
 
-        <img loading="lazy" decoding="async" class="projectThumbnail" src="assets/images/Serveur/Serveur1.webp" width="1000" height="550" alt="Services hébergés sur le serveur personnel">
+        <img loading="lazy" decoding="async" class="projectThumbnail" src="assets/images/Serveur/Serveur2.svg" width="1000" height="740" alt="Architecture réseau du serveur personnel"/>
 
         <h3>Compétences utilisées : </h3>
         <ul>
-            <li>Administration système Linux (Debian)</li>
-            <li>Sécurisation réseau</li>
+            <li>Administration système Linux (Debian, Alpine, Artix)</li>
+            <li>Virtualisation et architecture multi-machines</li>
+            <li>Reverse proxy Nginx et sécurisation réseau (Cloudflare, VPN, filtrage anti-bots / DDoS)</li>
             <li>Conteneurisation Docker</li>
             <li>Déploiement et maintenance de services self-hosted</li>
         </ul>

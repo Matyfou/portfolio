@@ -1,0 +1,21 @@
+Mentions légales
+
+Éditeur du site
+Ce site est édité à titre non professionnel par Matt DELAPORTE--LEFEBVRE.
+Contact : matt.dgd@proton.me
+
+Directeur de la publication
+Matt DELAPORTE--LEFEBVRE
+
+Hébergement
+Le site est auto-hébergé par l’éditeur, sur un serveur personnel connecté à Internet via un accès fourni par Free (Free SAS, 8 rue de la Ville l’Évêque, 75008 Paris).
+Le trafic transite par le réseau de Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, États-Unis), qui assure des fonctions de CDN, de proxy et de sécurité.
+
+Code source
+Le code source de ce site est distribué sous licence GNU GPL version 2.0 ou toute version ultérieure. Le texte de la licence est disponible sur https://www.gnu.org/licenses/old-licenses/gpl-2.0.html. Le code source est accessible à l’adresse : https://github.com/Matyfou/portfolio
+
+Autres contenus
+Sauf mention contraire, les textes, images, photographies et réalisations présentés sur ce site ne sont pas couverts par cette licence et restent la propriété de Matt DELAPORTE--LEFEBVRE. Les marques, logos et noms commerciaux de tiers cités ou reproduits sur ce site demeurent la propriété exclusive de leurs détenteurs respectifs ; leur présence n’implique aucune affiliation ni aucun droit de réutilisation. Toute reproduction sans autorisation est interdite.
+
+Responsabilité
+L’éditeur s’efforce de fournir des informations exactes mais ne peut garantir l’absence d’erreurs. Il n’est pas responsable du contenu des sites externes vers lesquels pointent des liens.
