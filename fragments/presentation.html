@@ -1,46 +1,27 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <link rel="icon" type="image/svg" href="assets/images/IconsPresentation/LogoMonochrome.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="assets/js/theme-init.js"></script>
-    <link href="assets/css/style.css" rel="stylesheet"/>
-</head>
-<body>
-<canvas id="bgShaderCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;background-color:var(--bg-color);"></canvas>
-<script src="assets/js/dark-light-mode.js"></script>
-<script src="bgShader.js"></script>
-<header>
-    <!--#include virtual="/partials/header.html" -->
-</header>
-
-<main>
     <div class="mainContainer">
 
         <h1 class="pageTitle">Bienvenue !</h1>
 
         <h1 class="separator">Présentation</h1>
         <div class="prensentContainer">
-            <img class="main-picture" src="assets/images/IconsPresentation/LogoMonochrome.svg" alt="Photo" width="128">
+            <img loading="eager" fetchpriority="high" decoding="async" class="main-picture" src="assets/images/IconsPresentation/LogoMonochrome.svg" alt="Photo" width="128" height="128">
             <div>
                 <h2>Matt DELAPORTE-LEFEBVRE</h2>
                 <h3>Étudiant développement web</h3>
             </div>
             <div class="links">
                 <div class="link">
-                    <img src="assets/images/Icons/githubIcon.svg" alt="Photo" width="46">
+                    <img loading="lazy" decoding="async" src="assets/images/Icons/githubIcon.svg" alt="Photo" width="46" height="46">
                     <a href="https://github.com/Matyfou" target="_blank"
                        rel="noopener noreferrer">GitHub</a>
                 </div>
                 <div class="link">
-                    <img src="assets/images/Icons/linkedinIcon.svg" alt="Photo" width="46">
+                    <img loading="lazy" decoding="async" src="assets/images/Icons/linkedinIcon.svg" alt="Photo" width="46" height="46">
                     <a href="https://linkedin.com/in/matt-delaporte-lefebvre-256128388" target="_blank"
                        rel="noopener noreferrer">LinkedIn</a>
                 </div>
                 <div class="link">
-                    <img src="assets/images/Icons/cvIcon.svg" alt="Photo" width="46">
+                    <img loading="lazy" decoding="async" src="assets/images/Icons/cvIcon.svg" alt="Photo" width="46" height="46">
                     <a href="assets/docs/CV Matt Delaporte-Lefebvre.pdf" target="_blank"
                        rel="noopener noreferrer">CV</a>
                 </div>
@@ -55,7 +36,7 @@
         </div>
 
         <div class="prensentContainer">
-        <img class="backroundPicture" src="assets/images/Icons/scratchIcon.svg" alt="Logo Scratch" width="64">
+        <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/Icons/scratchIcon.svg" alt="Logo Scratch" width="64" height="64">
         <div>
         <h4>2017</h4>
         <p>Tout a commencé en 6e, en cours de mathématiques, avec la découverte de Scratch : un logiciel de programmation visuelle où l'on assemble des blocs d'instructions. Une flamme s'est allumée : créer des jeux à partir de simples algorithmes m'a fasciné.</p>
@@ -67,11 +48,11 @@
         <h4>2020</h4>
         <p>Ayant atteint les limites de Scratch, j'ai appris Python avec des tutoriels YouTube et W3Schools. Ce que je faisais sous Scratch se traduisait facilement en Python. J'ai créé plusieurs logiciels pour automatiser des tâches, et choisi la voie du développement pour mes études.</p>
         </div>
-        <img class="backroundPicture" src="assets/images/Icons/pythonIcon.svg" alt="Logo Python" width="64">
+        <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/Icons/pythonIcon.svg" alt="Logo Python" width="64" height="64">
         </div>
 
         <div class="prensentContainer">
-        <img class="backroundPicture" src="assets/images/Icons/csIcon.svg" alt="Logo C#" width="64">
+        <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/Icons/csIcon.svg" alt="Logo C#" width="64" height="64">
         <div>
         <h4>2021</h4>
         <p>Pour créer des jeux, j'ai suivi une formation Udemy sur C# et Unity, et passé une grande partie de mon temps libre sur des mini-jeux. Mes projets grossissant, j'ai compris qu'une grande difficulté du développeur est d'organiser son code pour le rendre modulaire et lisible.</p>
@@ -83,11 +64,11 @@
         <h4>2023</h4>
         <p>Curieux du modding, j'ai appris Java pour modder Minecraft. J'y ai appris à différencier opérations côté serveur et côté client : créer des cheats côté client, puis les contrer côté serveur. J'ai aussi enrichi Meteor Client (mod boîte à outils) avec mes propres modules. Leçon retenue : ne jamais faire confiance à la machine du client. J'ai également fait de la rétro-ingénierie d'un launcher pour analyser la sécurité de son système d'authentification.</p>
         </div>
-        <img class="backroundPicture" src="assets/images/Icons/javaIcon.svg" alt="Logo Java" width="64">
+        <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/Icons/javaIcon.svg" alt="Logo Java" width="64" height="64">
         </div>
 
         <div class="prensentContainer">
-        <img class="backroundPicture" src="assets/images/Icons/godotIcon.svg" alt="Logo Godot" width="64">
+        <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/Icons/godotIcon.svg" alt="Logo Godot" width="64" height="64">
         <div>
         <h4>2024</h4>
         <p>Découragé par la pente d'apprentissage d'Unity et ses nouvelles politiques d'utilisation, je suis passé à Godot Engine. Cela a rallumé ma flamme : beaucoup de jeux créés, grande aisance en GDScript, jusqu'à modifier le moteur lui-même (écrit en C++). <br>Par souci de liberté numérique, je suis aussi passé de Windows à Linux sur tous mes ordinateurs, et je ne cesse d'expérimenter avec. <br>Passionné aussi par les serveurs, j'ai monté un serveur sous Debian et un autre sous Artix pour héberger Jellyfin, Git, de la domotique, etc.</p>
@@ -99,32 +80,32 @@
         <h4>2025 - aujourd'hui</h4>
         <p>Ma formation au Lycée Gustave Flaubert m'a fait découvrir le développement web : HTML, CSS, JavaScript, PHP, frameworks (Bootstrap, Django, NodeJS) et CMS (WordPress, Wix).</p>
         </div>
-        <img class="backroundPicture" src="assets/images/Icons/webIcon.svg" alt="Icône développement web" width="64">
+        <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/Icons/webIcon.svg" alt="Icône développement web" width="64" height="64">
         </div>
 
         <h1 class="separator">Études</h1>
         <div class="prensentContainer">
-            <img class="backroundPicture" src="assets/images/IconsPresentation/flaubertLogo.png" alt="Photo" width="128">
+            <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/IconsPresentation/flaubertLogo.webp" alt="Photo" width="128" height="128">
             <div>
                 <h2>Lycée Gustave Flaubert</h2>
                 <h3><abbr title="BTS Services informatiques aux organisations Option Solutions Logicielles et Applications Métiers">BTS SIO SLAM 1re année</abbr></h3>
-                <h5>(2025-2026)</h5>
+                <h4>(2025-2026)</h4>
             </div>
         </div>
 
         <div class="prensentContainer">
-            <img class="backroundPicture" src="assets/images/IconsPresentation/grieuLogo.png" alt="Photo" width="128">
+            <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/IconsPresentation/grieuLogo.webp" alt="Photo" width="128" height="128">
             <div>
                 <h2>Lycée des Métiers Les 4 Cantons - Grieu</h2>
                 <h3><abbr title="BAC PRO systèmes numériques Option Réseaux informatiques et systèmes communicants">BAC Pro SN RISC</abbr></h3>
                 <h3><abbr title="Seconde Métiers des Transitions Numérique et Énergétique">2nd MTNE</abbr></h3>
-                <h5>(2022-2025)</h5>
+                <h4>(2022-2025)</h4>
             </div>
         </div>
 
         <h1 class="separator">Stages</h1>
         <div class="prensentContainer">
-            <img class="backroundPicture" src="assets/images/IconsPresentation/christofleLogo.png" alt="Photo" width="128">
+            <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/IconsPresentation/christofleLogo.webp" alt="Photo" width="128" height="128">
             <div>
                 <h2>Christofle</h2>
                 <h3>Manufacture d’orfèvrerie - Yainville (76480)</h3>
@@ -133,12 +114,12 @@
                     <li>Administration de systèmes d’information</li>
                     <li>Traitements de documents numériques</li>
                 </ul>
-                <h5>Septembre 2024, Janvier 2025 (6 semaines)</h5>
+                <h4>Septembre 2024, Janvier 2025 (6 semaines)</h4>
             </div>
         </div>
 
         <div class="prensentContainer">
-            <img class="backroundPicture" src="assets/images/IconsPresentation/bersoultLogo.png" alt="Photo" width="128">
+            <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/IconsPresentation/bersoultLogo.webp" alt="Photo" width="128" height="128">
             <div>
                 <h2>Bersoult et Fils</h2>
                 <h3>Service de réparation d'appareils électroménagers - Maromme (76150)</h3>
@@ -146,12 +127,12 @@
                     <li>Dépannage de matériel informatique</li>
                     <li>Livraison, installation et dépannage d'appareils électroménagers</li>
                 </ul>
-                <h5>Novembre 2022, Juin 2023, Novembre 2023, Avril 2024 (14 semaines)</h5>
+                <h4>Novembre 2022, Juin 2023, Novembre 2023, Avril 2024 (14 semaines)</h4>
             </div>
         </div>
 
         <div class="prensentContainer">
-            <img class="backroundPicture" src="assets/images/IconsPresentation/digitalduneLogo.png" alt="Photo" width="128">
+            <img loading="lazy" decoding="async" class="backroundPicture" src="assets/images/IconsPresentation/digitalduneLogo.webp" alt="Photo" width="128" height="128">
             <div>
                 <h2>Digitaldune</h2>
                 <h3>Développement Web, Architecture SI, DevOps - Rouen (76000)</h3>
@@ -160,21 +141,10 @@
                     <li>Développement site vitrine</li>
                     <li>Étude comportement LLM et <abbr title="Generative Engine Optimization : améliorer la visibilité de contenus dans les réponses produites par des intelligences artificielles">GEO</abbr></li>
                 </ul>
-                <h5>Juin 2026 (5 semaines)</h5>
+                <h4>Juin 2026 (5 semaines)</h4>
             </div>
         </div>
 
 
-        <button onclick="window.location.href='projets'" class="nextPageButton">Projets ></button>
+        <a href="/projets" class="nextPageButton" data-link>Projets ></a>
     </div>
-</main>
-
-<footer>
-    <!--#include virtual="/partials/footer.html" -->
-</footer>
-
-<script src="assets/js/script.js"></script>
-
-</body>
-</html>
-

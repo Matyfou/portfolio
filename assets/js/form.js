@@ -1,9 +1,9 @@
-// Formulaire de contact : envoie les données à l'API /api/form.
-// L'API attend un objet JSON dont le champ "arg" contient le JSON du message.
-document.getElementById("form").addEventListener("submit", async function (e) {
-    e.preventDefault();
+const form = document.getElementById("form");
 
-    const form = this;
+// The API expects a JSON body whose "arg" field contains the message JSON.
+form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
     const data = {
         email: form.email.value,
         object: form.objet.value,
@@ -18,7 +18,7 @@ document.getElementById("form").addEventListener("submit", async function (e) {
         });
 
         if (!response.ok) {
-            throw new Error("HTTP " + response.status);
+            throw new Error(`HTTP ${response.status}`);
         }
 
         document.getElementById("confirmation").style.display = "block";

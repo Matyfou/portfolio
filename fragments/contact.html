@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <link rel="icon" type="image/svg" href="assets/images/IconsPresentation/LogoMonochrome.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="assets/js/theme-init.js"></script>
-    <link href="assets/css/style.css" rel="stylesheet" />
-</head>
-<body>
-<canvas id="bgShaderCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;background-color:var(--bg-color);"></canvas>
-<script src="assets/js/dark-light-mode.js"></script>
-<script src="bgShader.js"></script>
-    <header>
-        <!--#include virtual="/partials/header.html" -->
-    </header>
-
-    <main>
         <div class="mainContainer">
 
             <h1 class="pageTitle">Contact</h1>
@@ -54,17 +35,5 @@
             </div>
 
 
-            <button onclick="window.location.href='presentation'" class="nextPageButton">Accueil ></button>
+            <a href="/presentation" class="nextPageButton" data-link>Accueil ></a>
         </div>
-    </main>
-
-    <footer>
-        <!--#include virtual="/partials/footer.html" -->
-    </footer>
-
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/form.js"></script>
-
-</body>
-</html>
-
