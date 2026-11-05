@@ -281,7 +281,7 @@ header{
 }
 .project-glow {
     break-inside: avoid;
-    display: inline-block;
+    display: block;
     width: 100%;
     position: relative;
     margin-bottom: 30px;
